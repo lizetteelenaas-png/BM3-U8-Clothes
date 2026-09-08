@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📘 Unit 2 My Community 🖍️</title>
+<title>📘 Unit 8 Clothes 🖍️</title>
 <style>
   body {
     margin: 0;
@@ -210,7 +210,7 @@
 <body>
 
 <div class="start-screen" id="startScreen">
-  <h1> 📘 Unit 2 My Community 🖍️</h1>
+  <h1> 📘 Unit 8 Clothes 🖍️</h1>
   <p> Help Kevin the Cat learn about her Community!</p>
   <button class="start-button" onclick="startGame()">Start Game</button>
   <audio id="bgMusic" loop>
@@ -228,45 +228,45 @@
 </div>
 
 <div class="targets" id="targetArea">
-  <div class="dropzone" data-match="fire station"><img src="fire-station.jpg" alt="fire station">
-      <button class="play-button" onclick="playAudio('fire stationAudio')">▶️</button>
-      <audio id="fire stationAudio" src="fire station.mp3"></audio></div>
+  <div class="dropzone" data-match="beanie"><img src="beanie.jpg" alt="beanie">
+      <button class="play-button" onclick="playAudio('beanieAudio')">▶️</button>
+      <audio id="beanieAudio" src="beanie.mp3"></audio></div>
   
-  <div class="dropzone" data-match="hospital"><img src="hospital.jpg" alt="hospital">
-      <button class="play-button" onclick="playAudio('hospitalAudio')">▶️</button>
-    <audio id="hospitalAudio" src="hospital.mp3"></audio></div>
+  <div class="dropzone" data-match="boots"><img src="boots.jpg" alt="boots">
+      <button class="play-button" onclick="playAudio('bootsAudio')">▶️</button>
+    <audio id="bootsAudio" src="boots.mp3"></audio></div>
   
-  <div class="dropzone" data-match="park"><img src="park.jpg" alt="park">
-      <button class="play-button" onclick="playAudio('parkAudio')">▶️</button>
-      <audio id="parkAudio" src="park.mp3"></audio></div>
+  <div class="dropzone" data-match="gloves"><img src="gloves.jpg" alt="gloves">
+      <button class="play-button" onclick="playAudio('glovesAudio')">▶️</button>
+      <audio id="glovesAudio" src="gloves.mp3"></audio></div>
   
-  <div class="dropzone" data-match="police station"><img src="police-station.jpg" alt="police station">
-      <button class="play-button" onclick="playAudio('police stationAudio')">▶️</button>
-      <audio id="police stationAudio" src="police station.mp3"></audio></div>
+  <div class="dropzone" data-match="scarf"><img src="scarf.jpg" alt="scarf">
+      <button class="play-button" onclick="playAudio('scarfAudio')">▶️</button>
+      <audio id="scarfAudio" src="scarf.mp3"></audio></div>
   
-  <div class="dropzone" data-match="restaurant"><img src="restaurant.jpg" alt="restaurant">
-      <button class="play-button" onclick="playAudio('restaurantAudio')">▶️</button>
-      <audio id="restaurantAudio" src="restaurant.mp3"></audio></div>
+  <div class="dropzone" data-match="jacket"><img src="jacket.jpg" alt="jacket">
+      <button class="play-button" onclick="playAudio('jacketAudio')">▶️</button>
+      <audio id="jacketAudio" src="jacket.mp3"></audio></div>
   
-  <div class="dropzone" data-match="supermarket"><img src="supermarket.jpg" alt="supermarket">
-      <button class="play-button" onclick="playAudio('supermarketAudio')">▶️</button>
-      <audio id="supermarketAudio" src="supermarket.mp3"></audio></div>
+  <div class="dropzone" data-match="sandals"><img src="sandals.jpg" alt="sandals">
+      <button class="play-button" onclick="playAudio('sandalsAudio')">▶️</button>
+      <audio id="sandalsAudio" src="sandals.mp3"></audio></div>
   
-  <div class="dropzone" data-match="doctor"><img src="doctor.jpg" alt="doctor">
-      <button class="play-button" onclick="playAudio('doctorAudio')">▶️</button>
-      <audio id="doctorAudio" src="doctor.mp3"></audio></div>
+  <div class="dropzone" data-match="shorts"><img src="shorts.jpg" alt="shorts">
+      <button class="play-button" onclick="playAudio('shortsAudio')">▶️</button>
+      <audio id="shortsAudio" src="shorts.mp3"></audio></div>
   
-  <div class="dropzone" data-match="fire fighter"><img src="fire-fighter.jpg" alt="fire fighter">
-      <button class="play-button" onclick="playAudio('fire fighterAudio')">▶️</button>
-      <audio id="fire fighterAudio" src="firefighter.mp3"></audio></div>
+  <div class="dropzone" data-match="bathing suit"><img src="bathing.jpg" alt="bathing suit">
+      <button class="play-button" onclick="playAudio('bathing suitAudio')">▶️</button>
+      <audio id="bathing suitAudio" src="bathing.mp3"></audio></div>
   
-  <div class="dropzone" data-match="police officer"><img src="police-officer.jpg" alt="police officer">
-      <button class="play-button" onclick="playAudio('police officerAudio')">▶️</button>
-      <audio id="police officerAudio" src="police officer.mp3"></audio></div>
+  <div class="dropzone" data-match="earmuffs"><img src="earmuffs.jpg" alt="earmuffs">
+      <button class="play-button" onclick="playAudio('earmuffsAudio')">▶️</button>
+      <audio id="earmuffsAudio" src="earmuffs.mp3"></audio></div>
   
-  <div class="dropzone" data-match="dinosaur"><img src="dinosaur.jpg" alt="dinosaur">
-      <button class="play-button" onclick="playAudio('dinosaurAudio')">▶️</button>
-      <audio id="dinosaurAudio" src="dinosaur.mp3"></audio></div>
+  <div class="dropzone" data-match="towel"><img src="towel.jpg" alt="towel">
+      <button class="play-button" onclick="playAudio('towelAudio')">▶️</button>
+      <audio id="towelAudio" src="towel.mp3"></audio></div>
 </div>
   
   <div class="feedback-line" id="feedbackLine"></div>
@@ -278,7 +278,7 @@
 </div>
 
 <script>
-let emotions=["fire station","hospital","park","police station","restaurant","supermarket","doctor","fire fighter","police officer","dinosaur"];
+let emotions=["beanie","boots","gloves","scarf","jacket","sandals","shorts","bathing suit","earmuffs","towel"];
 const bunny=document.getElementById("bunny");
 const egg=document.getElementById("egg");
 const feedbackLine=document.getElementById("feedbackLine");
